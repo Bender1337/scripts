@@ -25,7 +25,7 @@
 
 多个消息平台（Telegram、Server 酱、Bark、PushPlus、钉钉等）服务推送。
 
-PS：最近发现掘金社区多了个成长等级，感觉可以写一写，有时间的话（并不能全部完成，比如移动端登录访问，发布文章等）
+PS：最近发现掘金社区多了个成长等级，感觉可以写一写，有时间的话
 
 ![images](https://raw.githubusercontent.com/sudojia/scripts/master/img/20220927111138.jpg)
 
@@ -56,6 +56,8 @@ PS：最近发现掘金社区多了个成长等级，感觉可以写一写，有
 
 如果你需要签到掘金，就填写 `JUEJIN_COOKIE` 变量
 
+...
+
 ### SSPANEL
 
 |      Name       |                      Value                      |                             说明                             |
@@ -67,6 +69,15 @@ PS：最近发现掘金社区多了个成长等级，感觉可以写一写，有
 |      Name       |    Value    |                             说明                             |
 | :-------------: | :---------: | :----------------------------------------------------------: |
 | `JUEJIN_COOKIE` | 掘金 Cookie | 打开[掘金社区](https://juejin.cn/) F12，选择 Application，点击 Cookies<br/>填写规则：`sessionid=xxxxxxxxx` |
+
+### Steam 游玩时长获取
+
+每周六的早上八点执行, 可自行 [Fork](https://github.com/login?return_to=%2Fsudojia%2Fscripts) 后更改 [stam_playtime.yml](https://github.com/sudojia/scripts/blob/83eeb06c36f7a2021d358262709a5a82ced01b2f/.github/workflows/stam_playtime.yml#L7)
+
+|     Name      |                            Value                             |                       说明                       |
+| :-----------: | :----------------------------------------------------------: | :----------------------------------------------: |
+| `STEAM_TOKEN` | 前往 https://steamcommunity.com/dev/apikey 注册你的 Steam Web API 密钥<br>eg: AB2C3xxxxxxxxxxxxxxxxx64xxxx | 填入你的密钥<br>eg: AB2C3xxxxxxxxxxxxxxxxx64xxxx |
+| `STEAM_64_ID` | 前往 https://steamid.top/ 获取你的 64 位 Steam ID<br>也可登录 [Steam](https://steamcommunity.com/login/home/) 并前往你的 Steam 个人主页 URL 地址栏直接获取<br>https://steamcommunity.com/profiles/76561xxxxxxxxx/<br>URL 最后那一串数字即是 64 位 Steam ID |                eg:76561xxxxxxxxx                 |
 
 ### 消息推送变量（可选）
 
@@ -126,7 +137,19 @@ PS：最近发现掘金社区多了个成长等级，感觉可以写一写，有
 - [ ] 掘金社区一键梭哈
 - [ ] ...
 
+## ⭐点个 Star 支持作者
+<!-- ![](https://api.star-history.com/svg?repos=sudojia/scripts&type=Date) -->
+
+<p align='center'>
+  <img src="https://api.star-history.com/svg?repos=sudojia/scripts&type=Date">
+</p>
+## ⚖️许可证
+
+本脚本库使用 [GPLv3](https://github.com/sudojia/scripts/blob/master/LICENSE) 许可证，脚本库中任何脚本不经允许**不可商用**。宣传或转载时请带上[本脚本库链接](https://github.com/sudojia/scripts)。
+
 ## 🕛历程
+
+- 2023-11-21 - 添加 Steam 游玩时长获取
 
 - 2022-09-27 - 移除葫芦侠（葫芦侠加了签名参数）
 
